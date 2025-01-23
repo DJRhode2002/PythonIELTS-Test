@@ -4,6 +4,9 @@ import speech_recognition as sr
 import pyttsx3
 import spacy
 from textblob import TextBlob
+import nltk
+
+nltk.download('punkt_tab')
 
 # Load the English language model from spaCy
 nlp = spacy.load('en_core_web_sm')
